@@ -3,6 +3,7 @@ export const navItems = [
   { id: "skills", label: "Skills" },
   { id: "projects", label: "Projects" },
   { id: "experience", label: "Experience" },
+  { id: "resume", label: "Resume" },
   { id: "contact", label: "Contact" }
 ];
 
@@ -125,6 +126,9 @@ export const links = {
   email: "sudharsana2710@gmail.com",
   gmail:
     "https://mail.google.com/mail/?view=cm&fs=1&to=sudharsana2710@gmail.com",
+  phone: "+91 7904837482",
+  phoneHref: "tel:+917904837482",
+  resume: "/Sudharsana_S_Resume.pdf",
   linkedin: "https://linkedin.com/in/sudharsana2710",
   github: "https://github.com/Sudharsana27",
   location: "Tamil Nadu, India"

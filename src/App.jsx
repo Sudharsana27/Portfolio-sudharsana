@@ -277,6 +277,32 @@ export default function App() {
           </Reveal>
         </section>
 
+        <section id="resume" className="resume section-shell">
+          <Reveal>
+            <p className="section-kicker">Resume</p>
+            <h2>Resume</h2>
+          </Reveal>
+
+          <Reveal className="resume-card">
+            <div>
+              <span>PDF Resume</span>
+              <h3>Sudharsana S</h3>
+              <p>
+                A concise snapshot of my education, internship experience,
+                projects, and skills. Open it in your browser or download a copy.
+              </p>
+            </div>
+            <div className="button-row">
+              <a className="btn primary" href={links.resume} target="_blank" rel="noreferrer">
+                View Resume
+              </a>
+              <a className="btn ghost" href={links.resume} download>
+                Download PDF
+              </a>
+            </div>
+          </Reveal>
+        </section>
+
         <section id="contact" className="contact section-shell">
           <Reveal>
             <p className="section-kicker">Contact</p>
@@ -288,6 +314,9 @@ export default function App() {
               <a className="btn primary" href={links.gmail} target="_blank" rel="noreferrer">
                 Email Me
               </a>
+              <a className="btn ghost" href={links.phoneHref}>
+                Call Me
+              </a>
               <a className="btn ghost" href={links.linkedin} target="_blank" rel="noreferrer">
                 View LinkedIn
               </a>
@@ -296,6 +325,7 @@ export default function App() {
               </a>
             </div>
             <div className="contact-lines">
+              <span>Phone: {links.phone}</span>
               <span>Email: {links.email}</span>
               <span>Location: {links.location}</span>
             </div>

@@ -787,6 +787,45 @@ h3 {
   font-weight: 800;
 }
 
+.resume-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(24px, 5vw, 60px);
+  max-width: 1120px;
+  margin-top: 46px;
+  border: 1px solid rgba(0, 212, 255, 0.28);
+  border-radius: 8px;
+  padding: clamp(28px, 5vw, 52px);
+  background:
+    radial-gradient(circle at 92% 10%, rgba(0, 212, 255, 0.16), transparent 20rem),
+    linear-gradient(135deg, rgba(84, 24, 127, 0.7), rgba(33, 9, 51, 0.88));
+  box-shadow: var(--shadow);
+}
+
+.resume-card span {
+  display: inline-flex;
+  margin-bottom: 16px;
+  color: var(--accent-2);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.resume-card p {
+  max-width: 620px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.55;
+}
+
+.resume-card .button-row {
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
 .contact {
   text-align: center;
 }
@@ -969,6 +1008,15 @@ h3 {
   .education-card {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .resume-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .resume-card .button-row {
+    margin-top: 8px;
   }
 
   .project-topline {

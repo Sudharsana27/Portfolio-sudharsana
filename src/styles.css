@@ -489,6 +489,14 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+[data-theme="light"] .skill-group {
+  border-color: rgba(108, 99, 255, 0.24);
+  background:
+    radial-gradient(circle at 90% 12%, rgba(0, 212, 255, 0.1), transparent 14rem),
+    rgba(255, 255, 255, 0.86);
+  box-shadow: 0 18px 48px rgba(90, 54, 150, 0.12);
+}
+
 .skill-group:nth-child(1) {
   grid-column: span 2;
 }
@@ -524,12 +532,28 @@ h3 {
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
+[data-theme="light"] .skill-cloud button {
+  border-color: rgba(108, 99, 255, 0.34);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(237, 226, 255, 0.92));
+  color: #24133a;
+  box-shadow: 0 8px 22px rgba(108, 99, 255, 0.12);
+}
+
 .skill-cloud button:hover,
 .skill-cloud button:focus-visible,
 .skill-cloud button.active {
   transform: translateY(-3px);
   border-color: var(--accent-2);
   box-shadow: 0 0 28px rgba(0, 212, 255, 0.18);
+}
+
+[data-theme="light"] .skill-cloud button:hover,
+[data-theme="light"] .skill-cloud button:focus-visible,
+[data-theme="light"] .skill-cloud button.active {
+  border-color: var(--accent);
+  background: linear-gradient(135deg, #ffffff, rgba(0, 212, 255, 0.13));
+  color: #160d28;
+  box-shadow: 0 12px 28px rgba(108, 99, 255, 0.18);
 }
 
 .skill-popover {

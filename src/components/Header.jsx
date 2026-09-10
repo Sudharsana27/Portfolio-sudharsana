@@ -3,7 +3,7 @@ import { navItems } from "../data.js";
 export default function Header({ activeSection, theme, onToggleTheme }) {
   return (
     <header className="site-header">
-      <a href="#home" className="logo" aria-label="Sudharsana home">
+      <a href="#home" className="logo" aria-label="Sudharsan home">
         S
       </a>
 

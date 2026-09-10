@@ -1,6 +1,6 @@
 export const navItems = [
   { id: "about", label: "About" },
-  { id: "skills", label: "Skills" },
+  { id: "skills", label: "Stations" },
   { id: "projects", label: "Projects" },
   { id: "experience", label: "Experience" },
   { id: "resume", label: "Resume" },
@@ -105,7 +105,7 @@ export const projects = [
     year: "2026",
     stack: ["React", "Vite", "JavaScript", "CSS"],
     description:
-      "Designed and built a visually striking personal portfolio with a dark editorial layout, animated skills constellation, responsive sections, active navigation, theme toggle, and smooth scroll interactions.",
+      "Designed and built a visually striking personal portfolio with a dark editorial layout, animated skills journey (train stops), responsive sections, active navigation, theme toggle, and smooth scroll interactions.",
     tags: ["Portfolio", "Frontend", "Responsive", "UI Design"]
   }
 ];

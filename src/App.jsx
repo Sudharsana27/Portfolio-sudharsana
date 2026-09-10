@@ -166,8 +166,8 @@ export default function App() {
 
         <section id="skills" className="skills section-shell">
           <Reveal>
-            <p className="section-kicker">Skills</p>
-            <h2>Skills & Constellation</h2>
+            <p className="section-kicker">Stations</p>
+            <h2>Skills & Journey</h2>
           </Reveal>
 
           <Reveal>

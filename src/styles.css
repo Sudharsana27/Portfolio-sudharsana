@@ -176,8 +176,9 @@ a {
 
 .particles span {
   position: absolute;
-  left: calc((var(--i) * 53px) % 100%);
-  top: calc(12% + ((var(--i) * 37px) % 74%));
+  /* avoid CSS calc modulo (%) for wider compatibility */
+  left: calc(var(--i) * 6px);
+  top: calc(12% + var(--i) * 4px);
   width: 4px;
   height: 4px;
   border-radius: 999px;
@@ -429,6 +430,70 @@ h3 {
 .constellation-lines line {
   stroke: rgba(108, 99, 255, 0.25);
   stroke-width: 1.4;
+}
+
+/* Train stops and train visuals */
+.stops .stop .stop-ring {
+  fill: none;
+  stroke: rgba(108, 99, 255, 0.12);
+  stroke-width: 1.6;
+}
+
+.stops .stop.violet .stop-ring,
+.stops .stop.violet .stop-core {
+  stroke: rgba(108, 99, 255, 0.18);
+  fill: var(--accent);
+}
+
+.stops .stop.cyan .stop-ring,
+.stops .stop.cyan .stop-core {
+  stroke: rgba(0, 212, 255, 0.16);
+  fill: var(--accent-2);
+}
+
+.stops .stop.pink .stop-ring,
+.stops .stop.pink .stop-core {
+  stroke: rgba(240, 107, 210, 0.14);
+  fill: var(--pink);
+}
+
+.stop-core {
+  opacity: 0.95;
+}
+
+.stop-label {
+  fill: var(--muted);
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.train {
+  transform-origin: 0 0;
+}
+
+.train-body {
+  fill: var(--accent);
+  opacity: 0.98;
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,0.45));
+}
+
+.train-wheel {
+  fill: #111115;
+  stroke: rgba(255,255,255,0.06);
+  stroke-width: 0.6;
+}
+
+/* Small subtle float for stops to keep some motion */
+.stop {
+  animation: stopFloat 5s ease-in-out infinite;
+}
+
+@keyframes stopFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(2px); }
+  100% { transform: translateY(0px); }
 }
 
 .star-node {
